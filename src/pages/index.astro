@@ -1,0 +1,76 @@
+---
+import Layout from '../layouts/Layout.astro';
+import Card from '../components/Card.astro';
+import Badge from '../components/Badge.astro';
+import Social from '../components/Social.astro';
+import Whatsapp from '../components/icons/what.astro';
+import Git from '../components/icons/Github.astro';
+import LinkedIn from '../components/icons/LinkedIn.astro';
+import Experiencia from '../components/Experiencia.astro';
+import Form from '../components/Formulario.astro'; 
+import Code from '../components/icons/code.astro';
+import Footer from '../components/Footer.astro';
+---
+
+<Layout title="Servicio Tecnico MDEO">
+	<main class="px-4">
+		<section class="w-full md:w-[730px] pt-2 mx-auto py-44 flex flex-col items-center">
+			<h1 class="font-bold text-5xl text-blue-300">Bienvenidos</h1>
+	
+			<img class="rounded-full m-4 h-[200px] w-[200px] md:h-[200px] md:w-[200px]" src="/magoresonanteblanco.jpg" alt="logo-mago">
+			<Code></Code>
+			<h2>MDEO <span class="text-blue-200 font-extralight">Servicio Tecnico</span></h2>
+	
+			<div class="flex flex-wrap gap-x-4 mt-8">
+				<Badge>Smartphones</Badge><Badge>PC</Badge><Badge>Programacion</Badge><Badge>Soluciones informaticas</Badge>
+			</div>
+			
+			<nav class="flex gap-x-4 mt-8">
+				<Social href="">
+					<Whatsapp class="size-6" ></Whatsapp>
+				</Social>
+				<Social href="https://github.com/Emedeo22">
+					<Git class="size-6"></Git>
+				</Social>
+				<Social href="">
+					<LinkedIn class="size-6"></LinkedIn>
+				</Social>
+			</nav>
+		</section>
+		
+		
+		<section class="py-3 mb-0 gap-x-4 flex flex-col items-center">
+			<h2>
+				Todos nuestros Servicios
+			</h2>
+			<div class=" ">
+			<img class="w-full md:w-auto aspect-auto rounded-3xl" src="/astro.jpeg" alt="">
+		</div>
+			<div class="py-20">		 
+				<Experiencia></Experiencia>	
+			</div>
+
+		</section>
+			<Footer></Footer>
+		<section>
+			
+		</section>
+			</main>
+	
+</Layout>
+
+<style>
+	
+	h2 { 
+		font-size: 3rem;
+		font-weight: 700;
+		line-height: 1;
+		text-align: center;
+		margin-bottom: 1em;
+	}
+	p {
+		font-size: 2vh;
+	}
+
+	
+</style>
